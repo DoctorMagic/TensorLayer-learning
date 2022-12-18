@@ -1,5 +1,7 @@
 #! /usr/bin/python
 # -*- coding: utf-8 -*-
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 from tensorlayer.app.human_pose_estimation.common import DataReader, visualize_3D_pose, flip_data
 from tensorlayer.app import computer_vision
